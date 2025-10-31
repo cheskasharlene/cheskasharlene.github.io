@@ -1,0 +1,358 @@
+/* ===== GENERAL ===== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+  transition: background-color 0.4s, color 0.4s;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  background-color: #18212A;
+  max-width: 1100px;
+  border-radius: 50px !important;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.nav-link {
+  color: #e2e2e2 !important;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: #f4a100 !important;
+}
+
+.btn-contact {
+  background-color: #fff;
+  color: #234b2e;
+  border-radius: 25px;
+  font-weight: 500;
+  padding: 6px 18px;
+  transition: 0.3s;
+}
+
+.btn-contact:hover {
+  background-color: #f4a100;
+  color: white;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text h3 {
+  font-weight: 600;
+  color: #222;
+}
+
+.hero-name {
+  color: #4f6fa2;
+  font-weight: 700;
+  font-size: 2.8rem;
+}
+
+.highlight {
+  color: #476C9B;
+  font-weight: 600;
+}
+
+.hero-text p {
+  margin-top: 10px;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* Social Icons */
+.hero-icons {
+  margin-top: 20px;
+}
+
+.hero-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 3px 3px 8px rgba(0,0,0,0.1),
+              -3px -3px 8px rgba(255,255,255,0.6);
+  color: #333;
+  font-size: 1.3rem;
+  transition: all 0.3s ease;
+}
+
+.hero-icons a:hover {
+  background-color: #F5A15B;
+  color: #fff;
+  transform: translateY(-4px);
+}
+
+/* ===== ABOUT SECTION ===== */
+.about {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.about h2 {
+  color: #222;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.about p {
+  color: #555;
+  max-width: 850px;
+  margin: 0 auto 40px;
+  line-height: 1.7;
+}
+
+/* About Cards */
+.about .card {
+  transition: transform 0.25s cubic-bezier(.4,2,.6,1), box-shadow 0.25s;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+  cursor: pointer;
+  border: none;
+}
+
+.about .card:hover,
+.about .card:focus-within {
+  background-color: #18212A;
+  color: #fff;
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+}
+
+.about .card:active {
+  background-color: #18212A;
+  color: #fff;
+}
+
+.about .card i {
+  color: #476C9B;
+}
+
+.about .card:hover i,
+.about .card:focus-within i {
+  color: #f4a100;
+}
+
+/* ===== SKILLS SECTION ===== */
+.skills-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.skills-section h2 {
+  color: #222;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.skill-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+  transition: 
+    transform 0.25s cubic-bezier(.4,2,.6,1),
+    box-shadow 0.25s,
+    background 0.25s;
+  cursor: pointer;
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-card:hover,
+.skill-card:focus-within {
+  background: #18212A;
+  color: #fff;
+  transform: translateY(-10px) scale(1.05) rotate(-3deg);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+}
+
+.skill-card:active {
+  transform: scale(0.97) rotate(2deg);
+}
+
+.skill-card .skill-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-bottom: 8px;
+  transition: filter 0.25s;
+}
+
+.skill-card:hover .skill-icon,
+.skill-card:focus-within .skill-icon {
+  filter: brightness(1.2) drop-shadow(0 0 8px #f4a10088);
+}
+
+.skill-card div {
+  font-weight: 500;
+  font-size: 1rem;
+  margin-top: 2px;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background-color: #f8f9fa;
+  color: #1b1b1b;
+  margin-top: 60px;
+}
+
+.footer h5 {
+  font-weight: 600;
+}
+
+.footer .social-icons a {
+  color: #1b1b1b;
+  font-size: 1.5rem;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+  color: #F5A15B;
+}
+
+.footer-bottom {
+  background-color: #1b1b1b;
+  color: #f1f1f1;
+  font-size: 0.95rem;
+}
+
+/* ===== DARK MODE ===== */
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.dark-navbar {
+  background-color: #1b1b1b !important;
+}
+
+.dark-footer {
+  background-color: #1b1b1b !important;
+  color: #f1f1f1;
+}
+
+.dark-footer .social-icons a {
+  color: #f1f1f1;
+}
+
+.dark-footer .footer-bottom {
+  background-color: #000;
+  color: #ccc;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+}
+
+/* ===== CONTACT SECTION ===== */
+.contact-section {
+  background-color: #18212A;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-bg-title {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  font-size: 8rem;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.05);
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 5px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.contact-section h2 {
+  position: relative;
+  z-index: 1;
+}
+
+.contact-icon {
+  font-size: 2rem;
+  color: #f4a100;
+  margin-right: 15px;
+}
+
+.contact-social {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+  margin-right: 10px;
+  background-color: #111;
+  color: #f4a100;
+  font-size: 1.3rem;
+  transition: all 0.3s ease;
+}
+
+.contact-social:hover {
+  background-color: #f4a100;
+  color: #000;
+  transform: translateY(-4px);
+}
+
+.contact-section .form-control {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #666;
+  border-radius: 0;
+  padding: 12px;
+}
+
+.contact-section .form-control:focus {
+  border-color: #f4a100;
+  box-shadow: 0 0 6px #f4a10055;
+}
+
+.contact-section .btn-warning {
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.contact-section .btn-warning:hover {
+  background: #fff;
+  color: #f4a100;
+}
+
+
